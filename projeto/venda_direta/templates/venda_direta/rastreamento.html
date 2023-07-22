@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <title>Rastreamento de Entrega</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Logo da Empresa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'suporte' %}">Suporte</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="jumbotron text-center bg-light text-center py-5 bg-image" style="background-image: url('construction-3.jpg');">
+    <h1>Rastreamento de Entrega</h1>
+    <p>Preencha os dados para rastrear a entrega:</p>
+  </header>
+
+  <main class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <form>
+          <div class="mb-3">
+            <label for="codigoEnvio" class="form-label">Código de Envio</label>
+            <input type="text" class="form-control" id="codigoEnvio" placeholder="Digite o código de envio">
+          </div>
+          <div class="mb-3">
+            <label for="endereco" class="form-label">Endereço de Entrega</label>
+            <input type="text" class="form-control" id="endereco" placeholder="Digite o endereço de entrega">
+          </div>
+          <button type="submit" class="btn btn-primary">Rastrear</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Entre em contato</h5>
+          <p>Endereço: 123, Rua Exemplo, Cidade, Estado</p>
+          <p>Telefone: (00) 1234-5678</p>
+          <p>E-mail: contato@exemplo.com</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Links úteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="/faq">Perguntas Frequentes</a></li>
+            <li><a href="/privacidade">Política de Privacidade</a></li>
+            <li><a href="/termos">Termos de Serviço</a></li>
+            <li><a href="/devolucao">Política de Devolução</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <!-- Adicione mais ícones ou links para outras redes sociais, se necessário -->
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <p>&copy; 2023 Site de Venda Direta. Todos os direitos reservados.</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <p>Estamos aqui para ajudar! Entre em contato conosco se tiver alguma dúvida ou problema.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+   <!-- Incluir os arquivos JavaScript do Bootstrap e jQuery -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+  
+  </html>

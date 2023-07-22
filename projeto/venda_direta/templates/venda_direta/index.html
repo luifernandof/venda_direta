@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de Venda Direta</title>
+  <!-- Incluir os arquivos CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Logo da Empresa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Usuário
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'cadastro' %}">Cadastro de Usuário</a></li>
+                <li><a class="dropdown-item" href="{% url 'extrato' %}">Extrato Compras Comissões</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="compras">Efetuar Compras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rastreamento">Rastrear Compras</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Administração
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'catalogo' %}">Cadastro de Produtos</a></li>
+                <li><a class="dropdown-item" href="{% url 'comissao' %}">Definir Comissão</a></li>
+                <li><a class="dropdown-item" href="{% url 'marketing' %}">Marketing</a></li>
+                <li><a class="dropdown-item" href="{% url 'dashboard' %}">Dashboard</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'suporte' %}">Suporte</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light text-center py-5 bg-image" style="background-image: url('construction-1.jpg');">
+    <div class="container">
+      <h1>Bem-vindo ao nosso novo site de Venda Direta</h1>
+      <p>Uma nova maneira de comprar produtos elétricos diretamente do fabricante.</p>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <h2>Descubra as Possibilidades</h2>
+      <p>Aqui você encontrará uma plataforma completa para suas compras diretas de produtos elétricos, com os
+        seguintes recursos:</p>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Cadastro de Usuário</h5>
+              <p class="card-text">Registre-se em nosso site para começar a aproveitar os benefícios das compras
+                diretas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Cadastro de Produtos</h5>
+              <p class="card-text">Explore nossa ampla variedade de produtos elétricos e adicione-os ao seu catálogo
+                de compras.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Compra dos Produtos</h5>
+              <p class="card-text">Realize suas compras diretamente do fabricante, com opções de pagamento e
+                entrega.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Rastreador de Entrega</h5>
+              <p class="card-text">Acompanhe o status de entrega dos seus pedidos em tempo real.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Cálculo e Registro de Comissão</h5>
+              <p class="card-text">Ganhe comissões por suas compras e acompanhe seus ganhos de forma transparente.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Administração do Site</h5>
+              <p class="card-text">Tenha acesso a ferramentas de marketing em redes sociais e gerencie suas vendas e
+                comissões.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Suporte ao Comprador</h5>
+              <p class="card-text">Entre em contato com nossa equipe de suporte para obter assistência e solucionar
+                suas dúvidas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tickets de Suporte</h5>
+              <p class="card-text">Abra tickets de suporte para receber ajuda personalizada e acompanhar o progresso
+                de suas solicitações.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Central de Atendimento</h5>
+              <p class="card-text">Acesse nossa central de atendimento para encontrar informações úteis e
+                orientações.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-light text-center py-5 bg-image" style="background-image: url('construction-2.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Entre em contato</h5>
+          <p>Endereço: 123, Rua Exemplo, Cidade, Estado</p>
+          <p>Telefone: (00) 1234-5678</p>
+          <p>E-mail: contato@exemplo.com</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Links úteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="/faq">Perguntas Frequentes</a></li>
+            <li><a href="/privacidade">Política de Privacidade</a></li>
+            <li><a href="/termos">Termos de Serviço</a></li>
+            <li><a href="/devolucao">Política de Devolução</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <!-- Adicione mais ícones ou links para outras redes sociais, se necessário -->
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <p>&copy; 2023 Site de Venda Direta. Todos os direitos reservados.</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <p>Estamos aqui para ajudar! Entre em contato conosco se tiver alguma dúvida ou problema.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+   <!-- Incluir os arquivos JavaScript do Bootstrap e jQuery -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+  
+  </html>
